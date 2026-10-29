@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Flow of antimicrobial resistance genes to commensal Neisseria</title>
+<style>
+:root { --bg:#f3f4f6; --ink:#111827; --muted:#6b7280; --card:#ffffff; --border:#e5e7eb; box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg:#111317; --ink:#e8e9ec; --muted:#9aa1ac; --border:#2c313a; } }
+:root[data-theme="dark"] { --bg:#111317; --ink:#e8e9ec; --muted:#9aa1ac; --border:#2c313a; }
+html { scroll-padding-top:env(safe-area-inset-top,0px); }
+body { margin:0; background:var(--bg); color:var(--ink); font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif; }
+p.hint { margin:0; padding:14px 24px 10px; font-size:.85rem; color:var(--muted); }
+#wrap { overflow-x:auto; margin:0 12px 24px; background:#fff; border:1px solid var(--border); border-radius:8px; }
+svg { display:block; width:100%; min-width:1100px; height:auto; }
+[data-node], #ribbons path { cursor:pointer; transition:opacity .12s; }
+#tip { position:fixed; pointer-events:none; opacity:0; background:var(--card); color:#111827; border:1px solid var(--border); border-radius:6px; padding:6px 10px; font-size:12px; line-height:1.4; box-shadow:0 4px 14px rgba(0,0,0,.18); z-index:5; max-width:280px; }
+</style>
+</head>
+<body>
+<p class="hint">Hover over a node (or a ribbon) to highlight every trajectory that passes through it, from origin to isolate. Entries: 70.</p>
+<div id="wrap"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1850 1273" width="1850" height="1273" font-family="Arial, Helvetica, sans-serif">
+<rect id="background" width="1850" height="1273" fill="#ffffff"/>
+<g id="title"><text x="40" y="48" font-size="26" font-weight="bold" fill="#111827">Flow of antimicrobial resistance genes from predicted origin species to cultured commensal Neisseria</text>
+<text x="40" y="76" font-size="14" fill="#4b5563">Ribbon width is proportional to the number of entries with the same trajectory (n = 70); ribbons are coloured by AMR class (Origins nodes are coloured by origin group).</text></g>
+<g id="column-headers" font-size="15" font-weight="bold" fill="#111827" text-anchor="middle">
+<text x="328.0" y="126">Origins</text>
+<text x="708.0" y="126">AMR Gene</text>
+<text x="1038.0" y="126">Type</text>
+<text x="1318.0" y="126">Flanking Mobile Genetic Elements</text>
+<text x="1658.0" y="126">Isolated Commensal Neisseria</text>
+</g><g id="ribbons">
+<path id="l16" d="M336.0,282.0C518.0,282.0 518.0,181.0 700.0,181.0L700.0,211.0C518.0,211.0 518.0,312.0 336.0,312.0Z" fill="#0B9B6B" fill-opacity="0.62"/>
+<path id="l48" d="M336.0,678.0C518.0,678.0 518.0,237.0 700.0,237.0L700.0,247.0C518.0,247.0 518.0,688.0 336.0,688.0Z" fill="#0B9B6B" fill-opacity="0.62"/>
+<path id="l52" d="M336.0,802.0C518.0,802.0 518.0,257.0 700.0,257.0L700.0,267.0C518.0,267.0 518.0,812.0 336.0,812.0Z" fill="#0B9B6B" fill-opacity="0.62"/>
+<path id="l76" d="M336.0,760.0C518.0,760.0 518.0,247.0 700.0,247.0L700.0,257.0C518.0,257.0 518.0,770.0 336.0,770.0Z" fill="#0B9B6B" fill-opacity="0.62"/>
+<path id="l88" d="M336.0,920.0C518.0,920.0 518.0,267.0 700.0,267.0L700.0,277.0C518.0,277.0 518.0,930.0 336.0,930.0Z" fill="#0B9B6B" fill-opacity="0.62"/>
+<path id="l105" d="M336.0,512.0C518.0,512.0 518.0,217.0 700.0,217.0L700.0,227.0C518.0,227.0 518.0,522.0 336.0,522.0Z" fill="#0B9B6B" fill-opacity="0.62"/>
+<path id="l112" d="M336.0,570.0C518.0,570.0 518.0,227.0 700.0,227.0L700.0,237.0C518.0,237.0 518.0,580.0 336.0,580.0Z" fill="#0B9B6B" fill-opacity="0.62"/>
+<path id="l84" d="M1046.0,422.0C1178.0,422.0 1178.0,241.0 1310.0,241.0L1310.0,251.0C1178.0,251.0 1178.0,432.0 1046.0,432.0Z" fill="#2F9BE0" fill-opacity="0.62"/>
+<path id="l2" d="M1046.0,432.0C1178.0,432.0 1178.0,251.0 1310.0,251.0L1310.0,281.0C1178.0,281.0 1178.0,462.0 1046.0,462.0Z" fill="#D98200" fill-opacity="0.62"/>
+<path id="l69" d="M1046.0,462.0C1178.0,462.0 1178.0,281.0 1310.0,281.0L1310.0,301.0C1178.0,301.0 1178.0,482.0 1046.0,482.0Z" fill="#8E44AD" fill-opacity="0.62"/>
+<path id="l3" d="M1326.0,241.0C1488.0,241.0 1488.0,244.0 1650.0,244.0L1650.0,254.0C1488.0,254.0 1488.0,251.0 1326.0,251.0Z" fill="#D98200" fill-opacity="0.62"/>
+<path id="l17" d="M716.0,181.0C873.0,181.0 873.0,256.0 1030.0,256.0L1030.0,286.0C873.0,286.0 873.0,211.0 716.0,211.0Z" fill="#0B9B6B" fill-opacity="0.62"/>
+<path id="l53" d="M716.0,217.0C873.0,217.0 873.0,286.0 1030.0,286.0L1030.0,336.0C873.0,336.0 873.0,267.0 716.0,267.0Z" fill="#0B9B6B" fill-opacity="0.62"/>
+<path id="l92" d="M716.0,283.0C873.0,283.0 873.0,336.0 1030.0,336.0L1030.0,346.0C873.0,346.0 873.0,293.0 716.0,293.0Z" fill="#0B9B6B" fill-opacity="0.62"/>
+<path id="l7" d="M716.0,385.0C873.0,385.0 873.0,366.0 1030.0,366.0L1030.0,386.0C873.0,386.0 873.0,405.0 716.0,405.0Z" fill="#2F9BE0" fill-opacity="0.62"/>
+<path id="l94" d="M716.0,343.0C873.0,343.0 873.0,346.0 1030.0,346.0L1030.0,356.0C873.0,356.0 873.0,353.0 716.0,353.0Z" fill="#2F9BE0" fill-opacity="0.62"/>
+<path id="l97" d="M716.0,359.0C873.0,359.0 873.0,356.0 1030.0,356.0L1030.0,366.0C873.0,366.0 873.0,369.0 716.0,369.0Z" fill="#2F9BE0" fill-opacity="0.62"/>
+<path id="l41" d="M716.0,741.0C873.0,741.0 873.0,386.0 1030.0,386.0L1030.0,416.0C873.0,416.0 873.0,771.0 716.0,771.0Z" fill="#4B5563" fill-opacity="0.62"/>
+<path id="l19" d="M1326.0,535.0C1488.0,535.0 1488.0,310.0 1650.0,310.0L1650.0,320.0C1488.0,320.0 1488.0,545.0 1326.0,545.0Z" fill="#0B9B6B" fill-opacity="0.62"/>
+<path id="l9" d="M1326.0,811.0C1488.0,811.0 1488.0,340.0 1650.0,340.0L1650.0,350.0C1488.0,350.0 1488.0,821.0 1326.0,821.0Z" fill="#2F9BE0" fill-opacity="0.62"/>
+<path id="l5" d="M1326.0,251.0C1488.0,251.0 1488.0,260.0 1650.0,260.0L1650.0,270.0C1488.0,270.0 1488.0,261.0 1326.0,261.0Z" fill="#D98200" fill-opacity="0.62"/>
+<path id="l13" d="M1326.0,339.0C1488.0,339.0 1488.0,270.0 1650.0,270.0L1650.0,310.0C1488.0,310.0 1488.0,379.0 1326.0,379.0Z" fill="#D98200" fill-opacity="0.62"/>
+<path id="l23" d="M1326.0,545.0C1488.0,545.0 1488.0,320.0 1650.0,320.0L1650.0,340.0C1488.0,340.0 1488.0,565.0 1326.0,565.0Z" fill="#8E44AD" fill-opacity="0.62"/>
+<path id="l71" d="M336.0,770.0C518.0,770.0 518.0,293.0 700.0,293.0L700.0,303.0C518.0,303.0 518.0,780.0 336.0,780.0Z" fill="#0B9B6B" fill-opacity="0.62"/>
+<path id="l91" d="M336.0,580.0C518.0,580.0 518.0,283.0 700.0,283.0L700.0,293.0C518.0,293.0 518.0,590.0 336.0,590.0Z" fill="#0B9B6B" fill-opacity="0.62"/>
+<path id="l42" d="M1046.0,256.0C1178.0,256.0 1178.0,307.0 1310.0,307.0L1310.0,317.0C1178.0,317.0 1178.0,266.0 1046.0,266.0Z" fill="#4B5563" fill-opacity="0.62"/>
+<path id="l46" d="M1046.0,482.0C1178.0,482.0 1178.0,323.0 1310.0,323.0L1310.0,333.0C1178.0,333.0 1178.0,492.0 1046.0,492.0Z" fill="#2F9BE0" fill-opacity="0.62"/>
+<path id="l44" d="M336.0,538.0C518.0,538.0 518.0,327.0 700.0,327.0L700.0,337.0C518.0,337.0 518.0,548.0 336.0,548.0Z" fill="#2F9BE0" fill-opacity="0.62"/>
+<path id="l37" d="M1046.0,492.0C1178.0,492.0 1178.0,359.0 1310.0,359.0L1310.0,369.0C1178.0,369.0 1178.0,502.0 1046.0,502.0Z" fill="#2F9BE0" fill-opacity="0.62"/>
+<path id="l98" d="M1046.0,266.0C1178.0,266.0 1178.0,339.0 1310.0,339.0L1310.0,359.0C1178.0,359.0 1178.0,286.0 1046.0,286.0Z" fill="#2F9BE0" fill-opacity="0.62"/>
+<path id="l12" d="M1046.0,502.0C1178.0,502.0 1178.0,369.0 1310.0,369.0L1310.0,529.0C1178.0,529.0 1178.0,662.0 1046.0,662.0Z" fill="#D98200" fill-opacity="0.62"/>
+<path id="l93" d="M336.0,160.0C518.0,160.0 518.0,343.0 700.0,343.0L700.0,353.0C518.0,353.0 518.0,170.0 336.0,170.0Z" fill="#2F9BE0" fill-opacity="0.62"/>
+<path id="l29" d="M1326.0,565.0C1488.0,565.0 1488.0,376.0 1650.0,376.0L1650.0,386.0C1488.0,386.0 1488.0,575.0 1326.0,575.0Z" fill="#0B9B6B" fill-opacity="0.62"/>
+<path id="l27" d="M1326.0,379.0C1488.0,379.0 1488.0,356.0 1650.0,356.0L1650.0,376.0C1488.0,376.0 1488.0,399.0 1326.0,399.0Z" fill="#D98200" fill-opacity="0.62"/>
+<path id="l31" d="M1326.0,575.0C1488.0,575.0 1488.0,386.0 1650.0,386.0L1650.0,396.0C1488.0,396.0 1488.0,585.0 1326.0,585.0Z" fill="#8E44AD" fill-opacity="0.62"/>
+<path id="l34" d="M1326.0,867.0C1488.0,867.0 1488.0,396.0 1650.0,396.0L1650.0,406.0C1488.0,406.0 1488.0,877.0 1326.0,877.0Z" fill="#8E44AD" fill-opacity="0.62"/>
+<path id="l35" d="M336.0,590.0C518.0,590.0 518.0,369.0 700.0,369.0L700.0,379.0C518.0,379.0 518.0,600.0 336.0,600.0Z" fill="#2F9BE0" fill-opacity="0.62"/>
+<path id="l96" d="M336.0,554.0C518.0,554.0 518.0,359.0 700.0,359.0L700.0,369.0C518.0,369.0 518.0,564.0 336.0,564.0Z" fill="#2F9BE0" fill-opacity="0.62"/>
+<path id="l6" d="M336.0,170.0C518.0,170.0 518.0,385.0 700.0,385.0L700.0,395.0C518.0,395.0 518.0,180.0 336.0,180.0Z" fill="#2F9BE0" fill-opacity="0.62"/>
+<path id="l82" d="M336.0,688.0C518.0,688.0 518.0,395.0 700.0,395.0L700.0,405.0C518.0,405.0 518.0,698.0 336.0,698.0Z" fill="#2F9BE0" fill-opacity="0.62"/>
+<path id="l100" d="M336.0,876.0C518.0,876.0 518.0,405.0 700.0,405.0L700.0,415.0C518.0,415.0 518.0,886.0 336.0,886.0Z" fill="#2F9BE0" fill-opacity="0.62"/>
+<path id="l51" d="M1326.0,585.0C1488.0,585.0 1488.0,452.0 1650.0,452.0L1650.0,472.0C1488.0,472.0 1488.0,605.0 1326.0,605.0Z" fill="#0B9B6B" fill-opacity="0.62"/>
+<path id="l38" d="M1326.0,399.0C1488.0,399.0 1488.0,442.0 1650.0,442.0L1650.0,452.0C1488.0,452.0 1488.0,409.0 1326.0,409.0Z" fill="#2F9BE0" fill-opacity="0.62"/>
+<path id="l47" d="M1326.0,323.0C1488.0,323.0 1488.0,432.0 1650.0,432.0L1650.0,442.0C1488.0,442.0 1488.0,333.0 1326.0,333.0Z" fill="#2F9BE0" fill-opacity="0.62"/>
+<path id="l39" d="M1326.0,261.0C1488.0,261.0 1488.0,412.0 1650.0,412.0L1650.0,422.0C1488.0,422.0 1488.0,271.0 1326.0,271.0Z" fill="#D98200" fill-opacity="0.62"/>
+<path id="l57" d="M1326.0,605.0C1488.0,605.0 1488.0,472.0 1650.0,472.0L1650.0,482.0C1488.0,482.0 1488.0,615.0 1326.0,615.0Z" fill="#D98200" fill-opacity="0.62"/>
+<path id="l68" d="M1326.0,877.0C1488.0,877.0 1488.0,522.0 1650.0,522.0L1650.0,532.0C1488.0,532.0 1488.0,887.0 1326.0,887.0Z" fill="#D98200" fill-opacity="0.62"/>
+<path id="l43" d="M1326.0,307.0C1488.0,307.0 1488.0,422.0 1650.0,422.0L1650.0,432.0C1488.0,432.0 1488.0,317.0 1326.0,317.0Z" fill="#4B5563" fill-opacity="0.62"/>
+<path id="l61" d="M1326.0,615.0C1488.0,615.0 1488.0,482.0 1650.0,482.0L1650.0,492.0C1488.0,492.0 1488.0,625.0 1326.0,625.0Z" fill="#4B5563" fill-opacity="0.62"/>
+<path id="l63" d="M1326.0,625.0C1488.0,625.0 1488.0,492.0 1650.0,492.0L1650.0,522.0C1488.0,522.0 1488.0,655.0 1326.0,655.0Z" fill="#8E44AD" fill-opacity="0.62"/>
+<path id="l49" d="M716.0,267.0C873.0,267.0 873.0,422.0 1030.0,422.0L1030.0,432.0C873.0,432.0 873.0,277.0 716.0,277.0Z" fill="#0B9B6B" fill-opacity="0.62"/>
+<path id="l72" d="M716.0,293.0C873.0,293.0 873.0,432.0 1030.0,432.0L1030.0,442.0C873.0,442.0 873.0,303.0 716.0,303.0Z" fill="#0B9B6B" fill-opacity="0.62"/>
+<path id="l36" d="M716.0,369.0C873.0,369.0 873.0,452.0 1030.0,452.0L1030.0,462.0C873.0,462.0 873.0,379.0 716.0,379.0Z" fill="#2F9BE0" fill-opacity="0.62"/>
+<path id="l45" d="M716.0,327.0C873.0,327.0 873.0,442.0 1030.0,442.0L1030.0,452.0C873.0,452.0 873.0,337.0 716.0,337.0Z" fill="#2F9BE0" fill-opacity="0.62"/>
+<path id="l83" d="M716.0,405.0C873.0,405.0 873.0,462.0 1030.0,462.0L1030.0,472.0C873.0,472.0 873.0,415.0 716.0,415.0Z" fill="#2F9BE0" fill-opacity="0.62"/>
+<path id="l1" d="M716.0,439.0C873.0,439.0 873.0,472.0 1030.0,472.0L1030.0,502.0C873.0,502.0 873.0,469.0 716.0,469.0Z" fill="#D98200" fill-opacity="0.62"/>
+<path id="l11" d="M716.0,475.0C873.0,475.0 873.0,502.0 1030.0,502.0L1030.0,592.0C873.0,592.0 873.0,565.0 716.0,565.0Z" fill="#D98200" fill-opacity="0.62"/>
+<path id="l15" d="M716.0,587.0C873.0,587.0 873.0,602.0 1030.0,602.0L1030.0,732.0C873.0,732.0 873.0,717.0 716.0,717.0Z" fill="#D98200" fill-opacity="0.62"/>
+<path id="l55" d="M716.0,571.0C873.0,571.0 873.0,592.0 1030.0,592.0L1030.0,602.0C873.0,602.0 873.0,581.0 716.0,581.0Z" fill="#D98200" fill-opacity="0.62"/>
+<path id="l59" d="M716.0,771.0C873.0,771.0 873.0,732.0 1030.0,732.0L1030.0,742.0C873.0,742.0 873.0,781.0 716.0,781.0Z" fill="#4B5563" fill-opacity="0.62"/>
+<path id="l21" d="M716.0,805.0C873.0,805.0 873.0,742.0 1030.0,742.0L1030.0,812.0C873.0,812.0 873.0,875.0 716.0,875.0Z" fill="#8E44AD" fill-opacity="0.62"/>
+<path id="l25" d="M716.0,907.0C873.0,907.0 873.0,832.0 1030.0,832.0L1030.0,962.0C873.0,962.0 873.0,1037.0 716.0,1037.0Z" fill="#8E44AD" fill-opacity="0.62"/>
+<path id="l65" d="M716.0,881.0C873.0,881.0 873.0,812.0 1030.0,812.0L1030.0,832.0C873.0,832.0 873.0,901.0 716.0,901.0Z" fill="#8E44AD" fill-opacity="0.62"/>
+<path id="l0" d="M336.0,458.0C518.0,458.0 518.0,459.0 700.0,459.0L700.0,469.0C518.0,469.0 518.0,468.0 336.0,468.0Z" fill="#D98200" fill-opacity="0.62"/>
+<path id="l4" d="M336.0,204.0C518.0,204.0 518.0,439.0 700.0,439.0L700.0,459.0C518.0,459.0 518.0,224.0 336.0,224.0Z" fill="#D98200" fill-opacity="0.62"/>
+<path id="l10" d="M336.0,1008.0C518.0,1008.0 518.0,535.0 700.0,535.0L700.0,565.0C518.0,565.0 518.0,1038.0 336.0,1038.0Z" fill="#D98200" fill-opacity="0.62"/>
+<path id="l26" d="M336.0,312.0C518.0,312.0 518.0,475.0 700.0,475.0L700.0,515.0C518.0,515.0 518.0,352.0 336.0,352.0Z" fill="#D98200" fill-opacity="0.62"/>
+<path id="l101" d="M336.0,704.0C518.0,704.0 518.0,515.0 700.0,515.0L700.0,535.0C518.0,535.0 518.0,724.0 336.0,724.0Z" fill="#D98200" fill-opacity="0.62"/>
+<path id="l18" d="M1046.0,286.0C1178.0,286.0 1178.0,535.0 1310.0,535.0L1310.0,595.0C1178.0,595.0 1178.0,346.0 1046.0,346.0Z" fill="#0B9B6B" fill-opacity="0.62"/>
+<path id="l50" d="M1046.0,662.0C1178.0,662.0 1178.0,615.0 1310.0,615.0L1310.0,625.0C1178.0,625.0 1178.0,672.0 1046.0,672.0Z" fill="#0B9B6B" fill-opacity="0.62"/>
+<path id="l56" d="M1046.0,672.0C1178.0,672.0 1178.0,625.0 1310.0,625.0L1310.0,635.0C1178.0,635.0 1178.0,682.0 1046.0,682.0Z" fill="#D98200" fill-opacity="0.62"/>
+<path id="l60" d="M1046.0,682.0C1178.0,682.0 1178.0,635.0 1310.0,635.0L1310.0,645.0C1178.0,645.0 1178.0,692.0 1046.0,692.0Z" fill="#4B5563" fill-opacity="0.62"/>
+<path id="l107" d="M1046.0,346.0C1178.0,346.0 1178.0,595.0 1310.0,595.0L1310.0,615.0C1178.0,615.0 1178.0,366.0 1046.0,366.0Z" fill="#4B5563" fill-opacity="0.62"/>
+<path id="l22" d="M1046.0,692.0C1178.0,692.0 1178.0,645.0 1310.0,645.0L1310.0,805.0C1178.0,805.0 1178.0,852.0 1046.0,852.0Z" fill="#8E44AD" fill-opacity="0.62"/>
+<path id="l90" d="M1326.0,821.0C1488.0,821.0 1488.0,788.0 1650.0,788.0L1650.0,808.0C1488.0,808.0 1488.0,841.0 1326.0,841.0Z" fill="#0B9B6B" fill-opacity="0.62"/>
+<path id="l104" d="M1326.0,655.0C1488.0,655.0 1488.0,658.0 1650.0,658.0L1650.0,678.0C1488.0,678.0 1488.0,675.0 1326.0,675.0Z" fill="#0B9B6B" fill-opacity="0.62"/>
+<path id="l114" d="M1326.0,887.0C1488.0,887.0 1488.0,818.0 1650.0,818.0L1650.0,828.0C1488.0,828.0 1488.0,897.0 1326.0,897.0Z" fill="#0B9B6B" fill-opacity="0.62"/>
+<path id="l85" d="M1326.0,271.0C1488.0,271.0 1488.0,538.0 1650.0,538.0L1650.0,548.0C1488.0,548.0 1488.0,281.0 1326.0,281.0Z" fill="#2F9BE0" fill-opacity="0.62"/>
+<path id="l95" d="M1326.0,841.0C1488.0,841.0 1488.0,808.0 1650.0,808.0L1650.0,818.0C1488.0,818.0 1488.0,851.0 1326.0,851.0Z" fill="#2F9BE0" fill-opacity="0.62"/>
+<path id="l99" d="M1326.0,409.0C1488.0,409.0 1488.0,558.0 1650.0,558.0L1650.0,578.0C1488.0,578.0 1488.0,429.0 1326.0,429.0Z" fill="#2F9BE0" fill-opacity="0.62"/>
+<path id="l102" d="M1326.0,429.0C1488.0,429.0 1488.0,578.0 1650.0,578.0L1650.0,658.0C1488.0,658.0 1488.0,509.0 1326.0,509.0Z" fill="#D98200" fill-opacity="0.62"/>
+<path id="l115" d="M1326.0,897.0C1488.0,897.0 1488.0,828.0 1650.0,828.0L1650.0,878.0C1488.0,878.0 1488.0,947.0 1326.0,947.0Z" fill="#D98200" fill-opacity="0.62"/>
+<path id="l108" d="M1326.0,675.0C1488.0,675.0 1488.0,678.0 1650.0,678.0L1650.0,698.0C1488.0,698.0 1488.0,695.0 1326.0,695.0Z" fill="#4B5563" fill-opacity="0.62"/>
+<path id="l87" d="M1326.0,281.0C1488.0,281.0 1488.0,548.0 1650.0,548.0L1650.0,558.0C1488.0,558.0 1488.0,291.0 1326.0,291.0Z" fill="#8E44AD" fill-opacity="0.62"/>
+<path id="l111" d="M1326.0,695.0C1488.0,695.0 1488.0,698.0 1650.0,698.0L1650.0,788.0C1488.0,788.0 1488.0,785.0 1326.0,785.0Z" fill="#8E44AD" fill-opacity="0.62"/>
+<path id="l119" d="M1326.0,947.0C1488.0,947.0 1488.0,878.0 1650.0,878.0L1650.0,898.0C1488.0,898.0 1488.0,967.0 1326.0,967.0Z" fill="#8E44AD" fill-opacity="0.62"/>
+<path id="l54" d="M336.0,886.0C518.0,886.0 518.0,571.0 700.0,571.0L700.0,581.0C518.0,581.0 518.0,896.0 336.0,896.0Z" fill="#D98200" fill-opacity="0.62"/>
+<path id="l14" d="M336.0,936.0C518.0,936.0 518.0,667.0 700.0,667.0L700.0,687.0C518.0,687.0 518.0,956.0 336.0,956.0Z" fill="#D98200" fill-opacity="0.62"/>
+<path id="l28" d="M336.0,352.0C518.0,352.0 518.0,587.0 700.0,587.0L700.0,627.0C518.0,627.0 518.0,392.0 336.0,392.0Z" fill="#D98200" fill-opacity="0.62"/>
+<path id="l66" d="M336.0,1038.0C518.0,1038.0 518.0,697.0 700.0,697.0L700.0,717.0C518.0,717.0 518.0,1058.0 336.0,1058.0Z" fill="#D98200" fill-opacity="0.62"/>
+<path id="l103" d="M336.0,724.0C518.0,724.0 518.0,637.0 700.0,637.0L700.0,667.0C518.0,667.0 518.0,754.0 336.0,754.0Z" fill="#D98200" fill-opacity="0.62"/>
+<path id="l116" d="M336.0,662.0C518.0,662.0 518.0,627.0 700.0,627.0L700.0,637.0C518.0,637.0 518.0,672.0 336.0,672.0Z" fill="#D98200" fill-opacity="0.62"/>
+<path id="l117" d="M336.0,962.0C518.0,962.0 518.0,687.0 700.0,687.0L700.0,697.0C518.0,697.0 518.0,972.0 336.0,972.0Z" fill="#D98200" fill-opacity="0.62"/>
+<path id="l40" d="M336.0,786.0C518.0,786.0 518.0,751.0 700.0,751.0L700.0,761.0C518.0,761.0 518.0,796.0 336.0,796.0Z" fill="#4B5563" fill-opacity="0.62"/>
+<path id="l58" d="M336.0,834.0C518.0,834.0 518.0,761.0 700.0,761.0L700.0,771.0C518.0,771.0 518.0,844.0 336.0,844.0Z" fill="#4B5563" fill-opacity="0.62"/>
+<path id="l106" d="M336.0,600.0C518.0,600.0 518.0,741.0 700.0,741.0L700.0,751.0C518.0,751.0 518.0,610.0 336.0,610.0Z" fill="#4B5563" fill-opacity="0.62"/>
+<path id="l109" d="M336.0,860.0C518.0,860.0 518.0,771.0 700.0,771.0L700.0,781.0C518.0,781.0 518.0,870.0 336.0,870.0Z" fill="#4B5563" fill-opacity="0.62"/>
+<path id="l20" d="M336.0,256.0C518.0,256.0 518.0,805.0 700.0,805.0L700.0,815.0C518.0,815.0 518.0,266.0 336.0,266.0Z" fill="#8E44AD" fill-opacity="0.62"/>
+<path id="l62" d="M336.0,468.0C518.0,468.0 518.0,815.0 700.0,815.0L700.0,835.0C518.0,835.0 518.0,488.0 336.0,488.0Z" fill="#8E44AD" fill-opacity="0.62"/>
+<path id="l78" d="M336.0,610.0C518.0,610.0 518.0,845.0 700.0,845.0L700.0,875.0C518.0,875.0 518.0,640.0 336.0,640.0Z" fill="#8E44AD" fill-opacity="0.62"/>
+<path id="l110" d="M336.0,522.0C518.0,522.0 518.0,835.0 700.0,835.0L700.0,845.0C518.0,845.0 518.0,532.0 336.0,532.0Z" fill="#8E44AD" fill-opacity="0.62"/>
+<path id="l73" d="M1046.0,852.0C1178.0,852.0 1178.0,851.0 1310.0,851.0L1310.0,861.0C1178.0,861.0 1178.0,862.0 1046.0,862.0Z" fill="#0B9B6B" fill-opacity="0.62"/>
+<path id="l89" d="M1046.0,366.0C1178.0,366.0 1178.0,811.0 1310.0,811.0L1310.0,831.0C1178.0,831.0 1178.0,386.0 1046.0,386.0Z" fill="#0B9B6B" fill-opacity="0.62"/>
+<path id="l8" d="M1046.0,386.0C1178.0,386.0 1178.0,831.0 1310.0,831.0L1310.0,851.0C1178.0,851.0 1178.0,406.0 1046.0,406.0Z" fill="#2F9BE0" fill-opacity="0.62"/>
+<path id="l113" d="M1046.0,406.0C1178.0,406.0 1178.0,867.0 1310.0,867.0L1310.0,877.0C1178.0,877.0 1178.0,416.0 1046.0,416.0Z" fill="#0B9B6B" fill-opacity="0.62"/>
+<path id="l67" d="M1046.0,862.0C1178.0,862.0 1178.0,877.0 1310.0,877.0L1310.0,937.0C1178.0,937.0 1178.0,922.0 1046.0,922.0Z" fill="#D98200" fill-opacity="0.62"/>
+<path id="l33" d="M1046.0,922.0C1178.0,922.0 1178.0,937.0 1310.0,937.0L1310.0,977.0C1178.0,977.0 1178.0,962.0 1046.0,962.0Z" fill="#8E44AD" fill-opacity="0.62"/>
+<path id="l64" d="M336.0,844.0C518.0,844.0 518.0,891.0 700.0,891.0L700.0,901.0C518.0,901.0 518.0,854.0 336.0,854.0Z" fill="#8E44AD" fill-opacity="0.62"/>
+<path id="l86" d="M336.0,818.0C518.0,818.0 518.0,881.0 700.0,881.0L700.0,891.0C518.0,891.0 518.0,828.0 336.0,828.0Z" fill="#8E44AD" fill-opacity="0.62"/>
+<path id="l74" d="M1326.0,851.0C1488.0,851.0 1488.0,954.0 1650.0,954.0L1650.0,964.0C1488.0,964.0 1488.0,861.0 1326.0,861.0Z" fill="#0B9B6B" fill-opacity="0.62"/>
+<path id="l77" d="M1326.0,785.0C1488.0,785.0 1488.0,934.0 1650.0,934.0L1650.0,944.0C1488.0,944.0 1488.0,795.0 1326.0,795.0Z" fill="#0B9B6B" fill-opacity="0.62"/>
+<path id="l75" d="M1326.0,509.0C1488.0,509.0 1488.0,914.0 1650.0,914.0L1650.0,934.0C1488.0,934.0 1488.0,529.0 1326.0,529.0Z" fill="#D98200" fill-opacity="0.62"/>
+<path id="l70" d="M1326.0,291.0C1488.0,291.0 1488.0,904.0 1650.0,904.0L1650.0,914.0C1488.0,914.0 1488.0,301.0 1326.0,301.0Z" fill="#8E44AD" fill-opacity="0.62"/>
+<path id="l79" d="M1326.0,795.0C1488.0,795.0 1488.0,944.0 1650.0,944.0L1650.0,954.0C1488.0,954.0 1488.0,805.0 1326.0,805.0Z" fill="#8E44AD" fill-opacity="0.62"/>
+<path id="l81" d="M1326.0,967.0C1488.0,967.0 1488.0,964.0 1650.0,964.0L1650.0,974.0C1488.0,974.0 1488.0,977.0 1326.0,977.0Z" fill="#8E44AD" fill-opacity="0.62"/>
+<path id="l24" d="M336.0,392.0C518.0,392.0 518.0,937.0 700.0,937.0L700.0,997.0C518.0,997.0 518.0,452.0 336.0,452.0Z" fill="#8E44AD" fill-opacity="0.62"/>
+<path id="l30" d="M336.0,972.0C518.0,972.0 518.0,1007.0 700.0,1007.0L700.0,1037.0C518.0,1037.0 518.0,1002.0 336.0,1002.0Z" fill="#8E44AD" fill-opacity="0.62"/>
+<path id="l32" d="M336.0,266.0C518.0,266.0 518.0,927.0 700.0,927.0L700.0,937.0C518.0,937.0 518.0,276.0 336.0,276.0Z" fill="#8E44AD" fill-opacity="0.62"/>
+<path id="l80" d="M336.0,230.0C518.0,230.0 518.0,907.0 700.0,907.0L700.0,927.0C518.0,927.0 518.0,250.0 336.0,250.0Z" fill="#8E44AD" fill-opacity="0.62"/>
+<path id="l118" d="M336.0,646.0C518.0,646.0 518.0,997.0 700.0,997.0L700.0,1007.0C518.0,1007.0 518.0,656.0 336.0,656.0Z" fill="#8E44AD" fill-opacity="0.62"/>
+</g>
+<g id="highlight" pointer-events="none"></g>
+<g id="nodes">
+<rect id="node-n0_0" data-node="n0_0" x="320" y="160.0" width="16" height="20" fill="#8E1B2C"/>
+<rect id="node-n0_1" data-node="n0_1" x="320" y="204.0" width="16" height="20" fill="#E4572E"/>
+<rect id="node-n0_2" data-node="n0_2" x="320" y="230.0" width="16" height="20" fill="#E4572E"/>
+<rect id="node-n0_3" data-node="n0_3" x="320" y="256.0" width="16" height="20" fill="#E4572E"/>
+<rect id="node-n0_4" data-node="n0_4" x="320" y="282.0" width="16" height="170" fill="#E4572E"/>
+<rect id="node-n0_5" data-node="n0_5" x="320" y="458.0" width="16" height="30" fill="#E4572E"/>
+<rect id="node-n0_6" data-node="n0_6" x="320" y="512.0" width="16" height="20" fill="#F58DB5"/>
+<rect id="node-n0_7" data-node="n0_7" x="320" y="538.0" width="16" height="10" fill="#F58DB5"/>
+<rect id="node-n0_8" data-node="n0_8" x="320" y="554.0" width="16" height="10" fill="#F58DB5"/>
+<rect id="node-n0_9" data-node="n0_9" x="320" y="570.0" width="16" height="70" fill="#F58DB5"/>
+<rect id="node-n0_10" data-node="n0_10" x="320" y="646.0" width="16" height="10" fill="#F58DB5"/>
+<rect id="node-n0_11" data-node="n0_11" x="320" y="662.0" width="16" height="10" fill="#F58DB5"/>
+<rect id="node-n0_12" data-node="n0_12" x="320" y="678.0" width="16" height="20" fill="#F58DB5"/>
+<rect id="node-n0_13" data-node="n0_13" x="320" y="704.0" width="16" height="50" fill="#F58DB5"/>
+<rect id="node-n0_14" data-node="n0_14" x="320" y="760.0" width="16" height="20" fill="#F58DB5"/>
+<rect id="node-n0_15" data-node="n0_15" x="320" y="786.0" width="16" height="10" fill="#F58DB5"/>
+<rect id="node-n0_16" data-node="n0_16" x="320" y="802.0" width="16" height="10" fill="#F58DB5"/>
+<rect id="node-n0_17" data-node="n0_17" x="320" y="818.0" width="16" height="10" fill="#F58DB5"/>
+<rect id="node-n0_18" data-node="n0_18" x="320" y="834.0" width="16" height="20" fill="#F58DB5"/>
+<rect id="node-n0_19" data-node="n0_19" x="320" y="860.0" width="16" height="10" fill="#F58DB5"/>
+<rect id="node-n0_20" data-node="n0_20" x="320" y="876.0" width="16" height="20" fill="#F58DB5"/>
+<rect id="node-n0_21" data-node="n0_21" x="320" y="920.0" width="16" height="10" fill="#2E3192"/>
+<rect id="node-n0_22" data-node="n0_22" x="320" y="936.0" width="16" height="20" fill="#2E3192"/>
+<rect id="node-n0_23" data-node="n0_23" x="320" y="962.0" width="16" height="40" fill="#2E3192"/>
+<rect id="node-n0_24" data-node="n0_24" x="320" y="1008.0" width="16" height="50" fill="#2E3192"/>
+<rect id="node-n1_0" data-node="n1_0" x="700" y="181.0" width="16" height="30" fill="#0B9B6B"/>
+<rect id="node-n1_1" data-node="n1_1" x="700" y="217.0" width="16" height="60" fill="#0B9B6B"/>
+<rect id="node-n1_2" data-node="n1_2" x="700" y="283.0" width="16" height="20" fill="#0B9B6B"/>
+<rect id="node-n1_3" data-node="n1_3" x="700" y="327.0" width="16" height="10" fill="#2F9BE0"/>
+<rect id="node-n1_4" data-node="n1_4" x="700" y="343.0" width="16" height="10" fill="#2F9BE0"/>
+<rect id="node-n1_5" data-node="n1_5" x="700" y="359.0" width="16" height="20" fill="#2F9BE0"/>
+<rect id="node-n1_6" data-node="n1_6" x="700" y="385.0" width="16" height="30" fill="#2F9BE0"/>
+<rect id="node-n1_7" data-node="n1_7" x="700" y="439.0" width="16" height="30" fill="#D98200"/>
+<rect id="node-n1_8" data-node="n1_8" x="700" y="475.0" width="16" height="90" fill="#D98200"/>
+<rect id="node-n1_9" data-node="n1_9" x="700" y="571.0" width="16" height="10" fill="#D98200"/>
+<rect id="node-n1_10" data-node="n1_10" x="700" y="587.0" width="16" height="130" fill="#D98200"/>
+<rect id="node-n1_11" data-node="n1_11" x="700" y="741.0" width="16" height="40" fill="#4B5563"/>
+<rect id="node-n1_12" data-node="n1_12" x="700" y="805.0" width="16" height="70" fill="#8E44AD"/>
+<rect id="node-n1_13" data-node="n1_13" x="700" y="881.0" width="16" height="20" fill="#8E44AD"/>
+<rect id="node-n1_14" data-node="n1_14" x="700" y="907.0" width="16" height="130" fill="#8E44AD"/>
+<rect id="node-n2_0" data-node="n2_0" x="1030" y="256.0" width="16" height="160" fill="#00695C"/>
+<rect id="node-n2_1" data-node="n2_1" x="1030" y="422.0" width="16" height="540" fill="#A1887F"/>
+<rect id="node-n3_0" data-node="n3_0" x="1310" y="241.0" width="16" height="60" fill="#2E7D32"/>
+<rect id="node-n3_1" data-node="n3_1" x="1310" y="307.0" width="16" height="10" fill="#00ACC1"/>
+<rect id="node-n3_2" data-node="n3_2" x="1310" y="323.0" width="16" height="10" fill="#F9A825"/>
+<rect id="node-n3_3" data-node="n3_3" x="1310" y="339.0" width="16" height="190" fill="#6A1B9A"/>
+<rect id="node-n3_4" data-node="n3_4" x="1310" y="535.0" width="16" height="270" fill="#1565C0"/>
+<rect id="node-n3_5" data-node="n3_5" x="1310" y="811.0" width="16" height="50" fill="#4E342E"/>
+<rect id="node-n3_6" data-node="n3_6" x="1310" y="867.0" width="16" height="110" fill="#78909C"/>
+<rect id="node-n4_0" data-node="n4_0" x="1650" y="244.0" width="16" height="10" fill="#3B4252"/>
+<rect id="node-n4_1" data-node="n4_1" x="1650" y="260.0" width="16" height="90" fill="#3B4252"/>
+<rect id="node-n4_2" data-node="n4_2" x="1650" y="356.0" width="16" height="50" fill="#3B4252"/>
+<rect id="node-n4_3" data-node="n4_3" x="1650" y="412.0" width="16" height="120" fill="#3B4252"/>
+<rect id="node-n4_4" data-node="n4_4" x="1650" y="538.0" width="16" height="360" fill="#3B4252"/>
+<rect id="node-n4_5" data-node="n4_5" x="1650" y="904.0" width="16" height="70" fill="#3B4252"/>
+</g><g id="node-labels" font-size="10.5" fill="#111827">
+<text data-node="n0_0" x="313" y="173.7" text-anchor="end">Neisseria gonorrhoeae</text>
+<text data-node="n0_1" x="313" y="217.7" text-anchor="end">Neisseria macacae</text>
+<text data-node="n0_2" x="313" y="243.7" text-anchor="end">Neisseria perflava</text>
+<text data-node="n0_3" x="313" y="269.7" text-anchor="end">Neisseria sicca</text>
+<text data-node="n0_4" x="313" y="370.7" text-anchor="end">Neisseria subflava</text>
+<text data-node="n0_5" x="313" y="476.7" text-anchor="end">Neisseria sp.</text>
+<text data-node="n0_6" x="313" y="525.7" text-anchor="end">Acinetobacter baumannii</text>
+<text data-node="n0_7" x="313" y="546.7" text-anchor="end">Brucella anthropi</text>
+<text data-node="n0_8" x="313" y="562.7" text-anchor="end">Citrobacter freundii</text>
+<text data-node="n0_9" x="313" y="608.7" text-anchor="end">Escherichia coli</text>
+<text data-node="n0_10" x="313" y="654.7" text-anchor="end">Fusobacterium polymorphum</text>
+<text data-node="n0_11" x="313" y="670.7" text-anchor="end">Gardnerella sp.</text>
+<text data-node="n0_12" x="313" y="691.7" text-anchor="end">Haemophilus influenzae</text>
+<text data-node="n0_13" x="313" y="732.7" text-anchor="end">Haemophilus sp.</text>
+<text data-node="n0_14" x="313" y="773.7" text-anchor="end">Kingella kingae</text>
+<text data-node="n0_15" x="313" y="794.7" text-anchor="end">Klebsiella pneumoniae</text>
+<text data-node="n0_16" x="313" y="810.7" text-anchor="end">Klebsiella quasipneumoniae</text>
+<text data-node="n0_17" x="313" y="826.7" text-anchor="end">Methylorubrum extorquens</text>
+<text data-node="n0_18" x="313" y="847.7" text-anchor="end">Paracoccus dentrificans</text>
+<text data-node="n0_19" x="313" y="868.7" text-anchor="end">Phaeobacter inhibens</text>
+<text data-node="n0_20" x="313" y="889.7" text-anchor="end">Salmonella enterica</text>
+<text data-node="n0_21" x="313" y="928.7" text-anchor="end">Enterococcus hirae</text>
+<text data-node="n0_22" x="313" y="949.7" text-anchor="end">Streptococcus oralis</text>
+<text data-node="n0_23" x="313" y="985.7" text-anchor="end">Streptococcus pneumoniae</text>
+<text data-node="n0_24" x="313" y="1036.7" text-anchor="end">Streptococcus sanguinis</text>
+<text data-node="n1_0" x="723" y="199.7" fill="#ffffff" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" opacity="0.85">AAC(3)</text>
+<text data-node="n1_0" x="723" y="199.7">AAC(3)</text>
+<text data-node="n1_1" x="723" y="250.7" fill="#ffffff" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" opacity="0.85">APH3</text>
+<text data-node="n1_1" x="723" y="250.7">APH3</text>
+<text data-node="n1_2" x="723" y="296.7" fill="#ffffff" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" opacity="0.85">APH6id</text>
+<text data-node="n1_2" x="723" y="296.7">APH6id</text>
+<text data-node="n1_3" x="723" y="335.7" fill="#ffffff" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" opacity="0.85">blaOCH8</text>
+<text data-node="n1_3" x="723" y="335.7">blaOCH8</text>
+<text data-node="n1_4" x="723" y="351.7" fill="#ffffff" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" opacity="0.85">BlaTEM143</text>
+<text data-node="n1_4" x="723" y="351.7">BlaTEM143</text>
+<text data-node="n1_5" x="723" y="372.7" fill="#ffffff" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" opacity="0.85">blaTEM1a</text>
+<text data-node="n1_5" x="723" y="372.7">blaTEM1a</text>
+<text data-node="n1_6" x="723" y="403.7" fill="#ffffff" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" opacity="0.85">blaTEM1b</text>
+<text data-node="n1_6" x="723" y="403.7">blaTEM1b</text>
+<text data-node="n1_7" x="723" y="457.7" fill="#ffffff" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" opacity="0.85">isaC</text>
+<text data-node="n1_7" x="723" y="457.7">isaC</text>
+<text data-node="n1_8" x="723" y="523.7" fill="#ffffff" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" opacity="0.85">mefA</text>
+<text data-node="n1_8" x="723" y="523.7">mefA</text>
+<text data-node="n1_9" x="723" y="579.7" fill="#ffffff" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" opacity="0.85">mphE</text>
+<text data-node="n1_9" x="723" y="579.7">mphE</text>
+<text data-node="n1_10" x="723" y="655.7" fill="#ffffff" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" opacity="0.85">msrD</text>
+<text data-node="n1_10" x="723" y="655.7">msrD</text>
+<text data-node="n1_11" x="723" y="764.7" fill="#ffffff" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" opacity="0.85">Sul2</text>
+<text data-node="n1_11" x="723" y="764.7">Sul2</text>
+<text data-node="n1_12" x="723" y="843.7" fill="#ffffff" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" opacity="0.85">TetB</text>
+<text data-node="n1_12" x="723" y="843.7">TetB</text>
+<text data-node="n1_13" x="723" y="894.7" fill="#ffffff" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" opacity="0.85">tetG</text>
+<text data-node="n1_13" x="723" y="894.7">tetG</text>
+<text data-node="n1_14" x="723" y="975.7" fill="#ffffff" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" opacity="0.85">tetM</text>
+<text data-node="n1_14" x="723" y="975.7">tetM</text>
+<text data-node="n2_0" x="1053" y="339.7" fill="#ffffff" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" opacity="0.85">Plasmid</text>
+<text data-node="n2_0" x="1053" y="339.7">Plasmid</text>
+<text data-node="n2_1" x="1053" y="695.7" fill="#ffffff" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" opacity="0.85">Chromosomal</text>
+<text data-node="n2_1" x="1053" y="695.7">Chromosomal</text>
+<text data-node="n3_0" x="1333" y="274.7" fill="#ffffff" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" opacity="0.85">Conjugal Transfer Protein</text>
+<text data-node="n3_0" x="1333" y="274.7">Conjugal Transfer Protein</text>
+<text data-node="n3_1" x="1333" y="315.7" fill="#ffffff" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" opacity="0.85">Mobile Element Protein</text>
+<text data-node="n3_1" x="1333" y="315.7">Mobile Element Protein</text>
+<text data-node="n3_2" x="1333" y="331.7" fill="#ffffff" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" opacity="0.85">Phage portal protein</text>
+<text data-node="n3_2" x="1333" y="331.7">Phage portal protein</text>
+<text data-node="n3_3" x="1333" y="437.7" fill="#ffffff" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" opacity="0.85">Recombinase</text>
+<text data-node="n3_3" x="1333" y="437.7">Recombinase</text>
+<text data-node="n3_4" x="1333" y="673.7" fill="#ffffff" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" opacity="0.85">Transposase</text>
+<text data-node="n3_4" x="1333" y="673.7">Transposase</text>
+<text data-node="n3_5" x="1333" y="839.7" fill="#ffffff" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" opacity="0.85">Multiple</text>
+<text data-node="n3_5" x="1333" y="839.7">Multiple</text>
+<text data-node="n3_6" x="1333" y="925.7" fill="#ffffff" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" opacity="0.85">Unknown</text>
+<text data-node="n3_6" x="1333" y="925.7">Unknown</text>
+<text data-node="n4_0" x="1673" y="252.7">N. macacae</text>
+<text data-node="n4_1" x="1673" y="308.7">N. mucosa</text>
+<text data-node="n4_2" x="1673" y="384.7">N. perflava</text>
+<text data-node="n4_3" x="1673" y="475.7">N. sicca</text>
+<text data-node="n4_4" x="1673" y="721.7">N. subflava</text>
+<text data-node="n4_5" x="1673" y="942.7">N. sp.</text>
+</g><g id="group-labels" font-weight="bold">
+<line x1="86" x2="86" y1="160.0" y2="180.0" stroke="#8E1B2C" stroke-width="4"/>
+<text transform="translate(66,170.0) rotate(-90)" text-anchor="middle" font-size="13" fill="#8E1B2C">Pathogenic Neisseria</text>
+<line x1="86" x2="86" y1="204.0" y2="488.0" stroke="#E4572E" stroke-width="4"/>
+<text transform="translate(66,346.0) rotate(-90)" text-anchor="middle" font-size="13" fill="#E4572E">Commensal Neisseria</text>
+<line x1="86" x2="86" y1="512.0" y2="896.0" stroke="#F58DB5" stroke-width="4"/>
+<text transform="translate(66,704.0) rotate(-90)" text-anchor="middle" font-size="13" fill="#F58DB5">Gram Negative</text>
+<line x1="86" x2="86" y1="920.0" y2="1058.0" stroke="#2E3192" stroke-width="4"/>
+<text transform="translate(66,989.0) rotate(-90)" text-anchor="middle" font-size="13" fill="#2E3192">Gram Positive</text>
+<text x="700" y="173.0" font-size="12" fill="#ffffff" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">Aminoglycosides</text>
+<text x="700" y="173.0" font-size="12" fill="#0B9B6B">Aminoglycosides</text>
+<text x="700" y="319.0" font-size="12" fill="#ffffff" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">Beta-lactams</text>
+<text x="700" y="319.0" font-size="12" fill="#2F9BE0">Beta-lactams</text>
+<text x="700" y="431.0" font-size="12" fill="#ffffff" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">Macrolides</text>
+<text x="700" y="431.0" font-size="12" fill="#D98200">Macrolides</text>
+<text x="700" y="733.0" font-size="12" fill="#ffffff" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">Sulfonamides</text>
+<text x="700" y="733.0" font-size="12" fill="#4B5563">Sulfonamides</text>
+<text x="700" y="797.0" font-size="12" fill="#ffffff" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">Tetracyclines</text>
+<text x="700" y="797.0" font-size="12" fill="#8E44AD">Tetracyclines</text>
+</g>
+<g id="legend" font-size="12" fill="#111827"><text x="40" y="1108" font-weight="bold">Origin group</text>
+<rect x="150" y="1097" width="14" height="14" fill="#8E1B2C"/><text x="170" y="1108">Pathogenic Neisseria</text>
+<rect x="330" y="1097" width="14" height="14" fill="#E4572E"/><text x="350" y="1108">Commensal Neisseria</text>
+<rect x="503" y="1097" width="14" height="14" fill="#F58DB5"/><text x="523" y="1108">Gram Negative</text>
+<rect x="634" y="1097" width="14" height="14" fill="#2E3192"/><text x="654" y="1108">Gram Positive</text>
+<text x="40" y="1138" font-weight="bold">AMR class</text>
+<rect x="150" y="1127" width="14" height="14" fill="#0B9B6B"/><text x="170" y="1138">Aminoglycosides</text>
+<rect x="295" y="1127" width="14" height="14" fill="#2F9BE0"/><text x="315" y="1138">Beta-lactams</text>
+<rect x="419" y="1127" width="14" height="14" fill="#D98200"/><text x="439" y="1138">Macrolides</text>
+<rect x="529" y="1127" width="14" height="14" fill="#4B5563"/><text x="549" y="1138">Sulfonamides</text>
+<rect x="653" y="1127" width="14" height="14" fill="#8E44AD"/><text x="673" y="1138">Tetracyclines</text>
+<text x="40" y="1168" font-weight="bold">Type (bars)</text>
+<rect x="150" y="1157" width="14" height="14" fill="#00695C"/><text x="170" y="1168">Plasmid</text>
+<rect x="239" y="1157" width="14" height="14" fill="#A1887F"/><text x="259" y="1168">Chromosomal</text>
+<text x="40" y="1198" font-weight="bold">MGE (bars)</text>
+<rect x="150" y="1187" width="14" height="14" fill="#1565C0"/><text x="170" y="1198">Transposase</text>
+<rect x="267" y="1187" width="14" height="14" fill="#6A1B9A"/><text x="287" y="1198">Recombinase</text>
+<rect x="384" y="1187" width="14" height="14" fill="#2E7D32"/><text x="404" y="1198">Conjugal Transfer Protein</text>
+<rect x="599" y="1187" width="14" height="14" fill="#4E342E"/><text x="619" y="1198">Multiple</text>
+<rect x="695" y="1187" width="14" height="14" fill="#F9A825"/><text x="715" y="1198">Phage portal protein</text>
+<rect x="875" y="1187" width="14" height="14" fill="#00ACC1"/><text x="895" y="1198">Mobile Element Protein</text>
+<rect x="1069" y="1187" width="14" height="14" fill="#78909C"/><text x="1089" y="1198">Unknown</text>
+<text x="1500" y="1108" font-weight="bold">Scale</text><rect x="1560" y="1097" width="14" height="50" fill="#6b7280"/><text x="1582" y="1126">5 entries</text></g></svg></div>
+<div id="tip"></div>
+<script>
+const D = {"u":10,"links":{"l16":{"x0":336,"x1":700,"sy":282.0,"ty":181.0,"rows":[7,12,49],"col":"#0B9B6B","name":"Neisseria subflava → AAC(3)","sub":"Aminoglycosides"},"l48":{"x0":336,"x1":700,"sy":678.0,"ty":237.0,"rows":[19],"col":"#0B9B6B","name":"Haemophilus influenzae → APH3","sub":"Aminoglycosides"},"l52":{"x0":336,"x1":700,"sy":802.0,"ty":257.0,"rows":[20],"col":"#0B9B6B","name":"Klebsiella quasipneumoniae → APH3","sub":"Aminoglycosides"},"l76":{"x0":336,"x1":700,"sy":760.0,"ty":247.0,"rows":[31],"col":"#0B9B6B","name":"Kingella kingae → APH3","sub":"Aminoglycosides"},"l88":{"x0":336,"x1":700,"sy":920.0,"ty":267.0,"rows":[36],"col":"#0B9B6B","name":"Enterococcus hirae → APH3","sub":"Aminoglycosides"},"l105":{"x0":336,"x1":700,"sy":512.0,"ty":217.0,"rows":[50],"col":"#0B9B6B","name":"Acinetobacter baumannii → APH3","sub":"Aminoglycosides"},"l112":{"x0":336,"x1":700,"sy":570.0,"ty":227.0,"rows":[62],"col":"#0B9B6B","name":"Escherichia coli → APH3","sub":"Aminoglycosides"},"l84":{"x0":1046,"x1":1310,"sy":422.0,"ty":241.0,"rows":[34],"col":"#2F9BE0","name":"Chromosomal → Conjugal Transfer Protein","sub":"Beta-lactams"},"l2":{"x0":1046,"x1":1310,"sy":432.0,"ty":251.0,"rows":[0,1,16],"col":"#D98200","name":"Chromosomal → Conjugal Transfer Protein","sub":"Macrolides"},"l69":{"x0":1046,"x1":1310,"sy":462.0,"ty":281.0,"rows":[27,35],"col":"#8E44AD","name":"Chromosomal → Conjugal Transfer Protein","sub":"Tetracyclines"},"l3":{"x0":1326,"x1":1650,"sy":241.0,"ty":244.0,"rows":[0],"col":"#D98200","name":"Conjugal Transfer Protein → N. macacae","sub":"Macrolides"},"l17":{"x0":716,"x1":1030,"sy":181.0,"ty":256.0,"rows":[7,12,49],"col":"#0B9B6B","name":"AAC(3) → Plasmid","sub":"Aminoglycosides"},"l53":{"x0":716,"x1":1030,"sy":217.0,"ty":286.0,"rows":[20,31,36,50,62],"col":"#0B9B6B","name":"APH3 → Plasmid","sub":"Aminoglycosides"},"l92":{"x0":716,"x1":1030,"sy":283.0,"ty":336.0,"rows":[37],"col":"#0B9B6B","name":"APH6id → Plasmid","sub":"Aminoglycosides"},"l7":{"x0":716,"x1":1030,"sy":385.0,"ty":366.0,"rows":[2,40],"col":"#2F9BE0","name":"blaTEM1b → Plasmid","sub":"Beta-lactams"},"l94":{"x0":716,"x1":1030,"sy":343.0,"ty":346.0,"rows":[38],"col":"#2F9BE0","name":"BlaTEM143 → Plasmid","sub":"Beta-lactams"},"l97":{"x0":716,"x1":1030,"sy":359.0,"ty":356.0,"rows":[39],"col":"#2F9BE0","name":"blaTEM1a → Plasmid","sub":"Beta-lactams"},"l41":{"x0":716,"x1":1030,"sy":741.0,"ty":386.0,"rows":[17,51,52],"col":"#4B5563","name":"Sul2 → Plasmid","sub":"Sulfonamides"},"l19":{"x0":1326,"x1":1650,"sy":535.0,"ty":310.0,"rows":[7],"col":"#0B9B6B","name":"Transposase → N. mucosa","sub":"Aminoglycosides"},"l9":{"x0":1326,"x1":1650,"sy":811.0,"ty":340.0,"rows":[2],"col":"#2F9BE0","name":"Multiple → N. mucosa","sub":"Beta-lactams"},"l5":{"x0":1326,"x1":1650,"sy":251.0,"ty":260.0,"rows":[1],"col":"#D98200","name":"Conjugal Transfer Protein → N. mucosa","sub":"Macrolides"},"l13":{"x0":1326,"x1":1650,"sy":339.0,"ty":270.0,"rows":[3,4,5,6],"col":"#D98200","name":"Recombinase → N. mucosa","sub":"Macrolides"},"l23":{"x0":1326,"x1":1650,"sy":545.0,"ty":320.0,"rows":[8,9],"col":"#8E44AD","name":"Transposase → N. mucosa","sub":"Tetracyclines"},"l71":{"x0":336,"x1":700,"sy":770.0,"ty":293.0,"rows":[28],"col":"#0B9B6B","name":"Kingella kingae → APH6id","sub":"Aminoglycosides"},"l91":{"x0":336,"x1":700,"sy":580.0,"ty":283.0,"rows":[37],"col":"#0B9B6B","name":"Escherichia coli → APH6id","sub":"Aminoglycosides"},"l42":{"x0":1046,"x1":1310,"sy":256.0,"ty":307.0,"rows":[17],"col":"#4B5563","name":"Plasmid → Mobile Element Protein","sub":"Sulfonamides"},"l46":{"x0":1046,"x1":1310,"sy":482.0,"ty":323.0,"rows":[18],"col":"#2F9BE0","name":"Chromosomal → Phage portal protein","sub":"Beta-lactams"},"l44":{"x0":336,"x1":700,"sy":538.0,"ty":327.0,"rows":[18],"col":"#2F9BE0","name":"Brucella anthropi → blaOCH8","sub":"Beta-lactams"},"l37":{"x0":1046,"x1":1310,"sy":492.0,"ty":359.0,"rows":[15],"col":"#2F9BE0","name":"Chromosomal → Recombinase","sub":"Beta-lactams"},"l98":{"x0":1046,"x1":1310,"sy":266.0,"ty":339.0,"rows":[39,40],"col":"#2F9BE0","name":"Plasmid → Recombinase","sub":"Beta-lactams"},"l12":{"x0":1046,"x1":1310,"sy":502.0,"ty":369.0,"rows":[3,4,5,6,10,11,29,30,41,42,43,44,45,46,47,48],"col":"#D98200","name":"Chromosomal → Recombinase","sub":"Macrolides"},"l93":{"x0":336,"x1":700,"sy":160.0,"ty":343.0,"rows":[38],"col":"#2F9BE0","name":"Neisseria gonorrhoeae → BlaTEM143","sub":"Beta-lactams"},"l29":{"x0":1326,"x1":1650,"sy":565.0,"ty":376.0,"rows":[12],"col":"#0B9B6B","name":"Transposase → N. perflava","sub":"Aminoglycosides"},"l27":{"x0":1326,"x1":1650,"sy":379.0,"ty":356.0,"rows":[10,11],"col":"#D98200","name":"Recombinase → N. perflava","sub":"Macrolides"},"l31":{"x0":1326,"x1":1650,"sy":575.0,"ty":386.0,"rows":[13],"col":"#8E44AD","name":"Transposase → N. perflava","sub":"Tetracyclines"},"l34":{"x0":1326,"x1":1650,"sy":867.0,"ty":396.0,"rows":[14],"col":"#8E44AD","name":"Unknown → N. perflava","sub":"Tetracyclines"},"l35":{"x0":336,"x1":700,"sy":590.0,"ty":369.0,"rows":[15],"col":"#2F9BE0","name":"Escherichia coli → blaTEM1a","sub":"Beta-lactams"},"l96":{"x0":336,"x1":700,"sy":554.0,"ty":359.0,"rows":[39],"col":"#2F9BE0","name":"Citrobacter freundii → blaTEM1a","sub":"Beta-lactams"},"l6":{"x0":336,"x1":700,"sy":170.0,"ty":385.0,"rows":[2],"col":"#2F9BE0","name":"Neisseria gonorrhoeae → blaTEM1b","sub":"Beta-lactams"},"l82":{"x0":336,"x1":700,"sy":688.0,"ty":395.0,"rows":[34],"col":"#2F9BE0","name":"Haemophilus influenzae → blaTEM1b","sub":"Beta-lactams"},"l100":{"x0":336,"x1":700,"sy":876.0,"ty":405.0,"rows":[40],"col":"#2F9BE0","name":"Salmonella enterica → blaTEM1b","sub":"Beta-lactams"},"l51":{"x0":1326,"x1":1650,"sy":585.0,"ty":452.0,"rows":[19,20],"col":"#0B9B6B","name":"Transposase → N. sicca","sub":"Aminoglycosides"},"l38":{"x0":1326,"x1":1650,"sy":399.0,"ty":442.0,"rows":[15],"col":"#2F9BE0","name":"Recombinase → N. sicca","sub":"Beta-lactams"},"l47":{"x0":1326,"x1":1650,"sy":323.0,"ty":432.0,"rows":[18],"col":"#2F9BE0","name":"Phage portal protein → N. sicca","sub":"Beta-lactams"},"l39":{"x0":1326,"x1":1650,"sy":261.0,"ty":412.0,"rows":[16],"col":"#D98200","name":"Conjugal Transfer Protein → N. sicca","sub":"Macrolides"},"l57":{"x0":1326,"x1":1650,"sy":605.0,"ty":472.0,"rows":[21],"col":"#D98200","name":"Transposase → N. sicca","sub":"Macrolides"},"l68":{"x0":1326,"x1":1650,"sy":877.0,"ty":522.0,"rows":[26],"col":"#D98200","name":"Unknown → N. sicca","sub":"Macrolides"},"l43":{"x0":1326,"x1":1650,"sy":307.0,"ty":422.0,"rows":[17],"col":"#4B5563","name":"Mobile Element Protein → N. sicca","sub":"Sulfonamides"},"l61":{"x0":1326,"x1":1650,"sy":615.0,"ty":482.0,"rows":[22],"col":"#4B5563","name":"Transposase → N. sicca","sub":"Sulfonamides"},"l63":{"x0":1326,"x1":1650,"sy":625.0,"ty":492.0,"rows":[23,24,25],"col":"#8E44AD","name":"Transposase → N. sicca","sub":"Tetracyclines"},"l49":{"x0":716,"x1":1030,"sy":267.0,"ty":422.0,"rows":[19],"col":"#0B9B6B","name":"APH3 → Chromosomal","sub":"Aminoglycosides"},"l72":{"x0":716,"x1":1030,"sy":293.0,"ty":432.0,"rows":[28],"col":"#0B9B6B","name":"APH6id → Chromosomal","sub":"Aminoglycosides"},"l36":{"x0":716,"x1":1030,"sy":369.0,"ty":452.0,"rows":[15],"col":"#2F9BE0","name":"blaTEM1a → Chromosomal","sub":"Beta-lactams"},"l45":{"x0":716,"x1":1030,"sy":327.0,"ty":442.0,"rows":[18],"col":"#2F9BE0","name":"blaOCH8 → Chromosomal","sub":"Beta-lactams"},"l83":{"x0":716,"x1":1030,"sy":405.0,"ty":462.0,"rows":[34],"col":"#2F9BE0","name":"blaTEM1b → Chromosomal","sub":"Beta-lactams"},"l1":{"x0":716,"x1":1030,"sy":439.0,"ty":472.0,"rows":[0,1,16],"col":"#D98200","name":"isaC → Chromosomal","sub":"Macrolides"},"l11":{"x0":716,"x1":1030,"sy":475.0,"ty":502.0,"rows":[3,4,10,29,41,42,43,44,63],"col":"#D98200","name":"mefA → Chromosomal","sub":"Macrolides"},"l15":{"x0":716,"x1":1030,"sy":587.0,"ty":602.0,"rows":[5,6,11,26,30,45,46,47,48,64,65,66,67],"col":"#D98200","name":"msrD → Chromosomal","sub":"Macrolides"},"l55":{"x0":716,"x1":1030,"sy":571.0,"ty":592.0,"rows":[21],"col":"#D98200","name":"mphE → Chromosomal","sub":"Macrolides"},"l59":{"x0":716,"x1":1030,"sy":771.0,"ty":732.0,"rows":[22],"col":"#4B5563","name":"Sul2 → Chromosomal","sub":"Sulfonamides"},"l21":{"x0":716,"x1":1030,"sy":805.0,"ty":742.0,"rows":[8,23,32,53,54,55,56],"col":"#8E44AD","name":"TetB → Chromosomal","sub":"Tetracyclines"},"l25":{"x0":716,"x1":1030,"sy":907.0,"ty":832.0,"rows":[9,13,14,25,27,33,57,58,59,60,61,68,69],"col":"#8E44AD","name":"tetM → Chromosomal","sub":"Tetracyclines"},"l65":{"x0":716,"x1":1030,"sy":881.0,"ty":812.0,"rows":[24,35],"col":"#8E44AD","name":"tetG → Chromosomal","sub":"Tetracyclines"},"l0":{"x0":336,"x1":700,"sy":458.0,"ty":459.0,"rows":[0],"col":"#D98200","name":"Neisseria sp. → isaC","sub":"Macrolides"},"l4":{"x0":336,"x1":700,"sy":204.0,"ty":439.0,"rows":[1,16],"col":"#D98200","name":"Neisseria macacae → isaC","sub":"Macrolides"},"l10":{"x0":336,"x1":700,"sy":1008.0,"ty":535.0,"rows":[3,4,63],"col":"#D98200","name":"Streptococcus sanguinis → mefA","sub":"Macrolides"},"l26":{"x0":336,"x1":700,"sy":312.0,"ty":475.0,"rows":[10,29,43,44],"col":"#D98200","name":"Neisseria subflava → mefA","sub":"Macrolides"},"l101":{"x0":336,"x1":700,"sy":704.0,"ty":515.0,"rows":[41,42],"col":"#D98200","name":"Haemophilus sp. → mefA","sub":"Macrolides"},"l18":{"x0":1046,"x1":1310,"sy":286.0,"ty":535.0,"rows":[7,12,20,31,49,50],"col":"#0B9B6B","name":"Plasmid → Transposase","sub":"Aminoglycosides"},"l50":{"x0":1046,"x1":1310,"sy":662.0,"ty":615.0,"rows":[19],"col":"#0B9B6B","name":"Chromosomal → Transposase","sub":"Aminoglycosides"},"l56":{"x0":1046,"x1":1310,"sy":672.0,"ty":625.0,"rows":[21],"col":"#D98200","name":"Chromosomal → Transposase","sub":"Macrolides"},"l60":{"x0":1046,"x1":1310,"sy":682.0,"ty":635.0,"rows":[22],"col":"#4B5563","name":"Chromosomal → Transposase","sub":"Sulfonamides"},"l107":{"x0":1046,"x1":1310,"sy":346.0,"ty":595.0,"rows":[51,52],"col":"#4B5563","name":"Plasmid → Transposase","sub":"Sulfonamides"},"l22":{"x0":1046,"x1":1310,"sy":692.0,"ty":645.0,"rows":[8,9,13,23,24,25,32,53,54,55,56,57,58,59,60,61],"col":"#8E44AD","name":"Chromosomal → Transposase","sub":"Tetracyclines"},"l90":{"x0":1326,"x1":1650,"sy":821.0,"ty":788.0,"rows":[36,37],"col":"#0B9B6B","name":"Multiple → N. subflava","sub":"Aminoglycosides"},"l104":{"x0":1326,"x1":1650,"sy":655.0,"ty":658.0,"rows":[49,50],"col":"#0B9B6B","name":"Transposase → N. subflava","sub":"Aminoglycosides"},"l114":{"x0":1326,"x1":1650,"sy":887.0,"ty":818.0,"rows":[62],"col":"#0B9B6B","name":"Unknown → N. subflava","sub":"Aminoglycosides"},"l85":{"x0":1326,"x1":1650,"sy":271.0,"ty":538.0,"rows":[34],"col":"#2F9BE0","name":"Conjugal Transfer Protein → N. subflava","sub":"Beta-lactams"},"l95":{"x0":1326,"x1":1650,"sy":841.0,"ty":808.0,"rows":[38],"col":"#2F9BE0","name":"Multiple → N. subflava","sub":"Beta-lactams"},"l99":{"x0":1326,"x1":1650,"sy":409.0,"ty":558.0,"rows":[39,40],"col":"#2F9BE0","name":"Recombinase → N. subflava","sub":"Beta-lactams"},"l102":{"x0":1326,"x1":1650,"sy":429.0,"ty":578.0,"rows":[41,42,43,44,45,46,47,48],"col":"#D98200","name":"Recombinase → N. subflava","sub":"Macrolides"},"l115":{"x0":1326,"x1":1650,"sy":897.0,"ty":828.0,"rows":[63,64,65,66,67],"col":"#D98200","name":"Unknown → N. subflava","sub":"Macrolides"},"l108":{"x0":1326,"x1":1650,"sy":675.0,"ty":678.0,"rows":[51,52],"col":"#4B5563","name":"Transposase → N. subflava","sub":"Sulfonamides"},"l87":{"x0":1326,"x1":1650,"sy":281.0,"ty":548.0,"rows":[35],"col":"#8E44AD","name":"Conjugal Transfer Protein → N. subflava","sub":"Tetracyclines"},"l111":{"x0":1326,"x1":1650,"sy":695.0,"ty":698.0,"rows":[53,54,55,56,57,58,59,60,61],"col":"#8E44AD","name":"Transposase → N. subflava","sub":"Tetracyclines"},"l119":{"x0":1326,"x1":1650,"sy":947.0,"ty":878.0,"rows":[68,69],"col":"#8E44AD","name":"Unknown → N. subflava","sub":"Tetracyclines"},"l54":{"x0":336,"x1":700,"sy":886.0,"ty":571.0,"rows":[21],"col":"#D98200","name":"Salmonella enterica → mphE","sub":"Macrolides"},"l14":{"x0":336,"x1":700,"sy":936.0,"ty":667.0,"rows":[5,6],"col":"#D98200","name":"Streptococcus oralis → msrD","sub":"Macrolides"},"l28":{"x0":336,"x1":700,"sy":352.0,"ty":587.0,"rows":[11,30,47,48],"col":"#D98200","name":"Neisseria subflava → msrD","sub":"Macrolides"},"l66":{"x0":336,"x1":700,"sy":1038.0,"ty":697.0,"rows":[26,67],"col":"#D98200","name":"Streptococcus sanguinis → msrD","sub":"Macrolides"},"l103":{"x0":336,"x1":700,"sy":724.0,"ty":637.0,"rows":[45,46,65],"col":"#D98200","name":"Haemophilus sp. → msrD","sub":"Macrolides"},"l116":{"x0":336,"x1":700,"sy":662.0,"ty":627.0,"rows":[64],"col":"#D98200","name":"Gardnerella sp. → msrD","sub":"Macrolides"},"l117":{"x0":336,"x1":700,"sy":962.0,"ty":687.0,"rows":[66],"col":"#D98200","name":"Streptococcus pneumoniae → msrD","sub":"Macrolides"},"l40":{"x0":336,"x1":700,"sy":786.0,"ty":751.0,"rows":[17],"col":"#4B5563","name":"Klebsiella pneumoniae → Sul2","sub":"Sulfonamides"},"l58":{"x0":336,"x1":700,"sy":834.0,"ty":761.0,"rows":[22],"col":"#4B5563","name":"Paracoccus dentrificans → Sul2","sub":"Sulfonamides"},"l106":{"x0":336,"x1":700,"sy":600.0,"ty":741.0,"rows":[51],"col":"#4B5563","name":"Escherichia coli → Sul2","sub":"Sulfonamides"},"l109":{"x0":336,"x1":700,"sy":860.0,"ty":771.0,"rows":[52],"col":"#4B5563","name":"Phaeobacter inhibens → Sul2","sub":"Sulfonamides"},"l20":{"x0":336,"x1":700,"sy":256.0,"ty":805.0,"rows":[8],"col":"#8E44AD","name":"Neisseria sicca → TetB","sub":"Tetracyclines"},"l62":{"x0":336,"x1":700,"sy":468.0,"ty":815.0,"rows":[23,56],"col":"#8E44AD","name":"Neisseria sp. → TetB","sub":"Tetracyclines"},"l78":{"x0":336,"x1":700,"sy":610.0,"ty":845.0,"rows":[32,54,55],"col":"#8E44AD","name":"Escherichia coli → TetB","sub":"Tetracyclines"},"l110":{"x0":336,"x1":700,"sy":522.0,"ty":835.0,"rows":[53],"col":"#8E44AD","name":"Acinetobacter baumannii → TetB","sub":"Tetracyclines"},"l73":{"x0":1046,"x1":1310,"sy":852.0,"ty":851.0,"rows":[28],"col":"#0B9B6B","name":"Chromosomal → Multiple","sub":"Aminoglycosides"},"l89":{"x0":1046,"x1":1310,"sy":366.0,"ty":811.0,"rows":[36,37],"col":"#0B9B6B","name":"Plasmid → Multiple","sub":"Aminoglycosides"},"l8":{"x0":1046,"x1":1310,"sy":386.0,"ty":831.0,"rows":[2,38],"col":"#2F9BE0","name":"Plasmid → Multiple","sub":"Beta-lactams"},"l113":{"x0":1046,"x1":1310,"sy":406.0,"ty":867.0,"rows":[62],"col":"#0B9B6B","name":"Plasmid → Unknown","sub":"Aminoglycosides"},"l67":{"x0":1046,"x1":1310,"sy":862.0,"ty":877.0,"rows":[26,63,64,65,66,67],"col":"#D98200","name":"Chromosomal → Unknown","sub":"Macrolides"},"l33":{"x0":1046,"x1":1310,"sy":922.0,"ty":937.0,"rows":[14,33,68,69],"col":"#8E44AD","name":"Chromosomal → Unknown","sub":"Tetracyclines"},"l64":{"x0":336,"x1":700,"sy":844.0,"ty":891.0,"rows":[24],"col":"#8E44AD","name":"Paracoccus dentrificans → tetG","sub":"Tetracyclines"},"l86":{"x0":336,"x1":700,"sy":818.0,"ty":881.0,"rows":[35],"col":"#8E44AD","name":"Methylorubrum extorquens → tetG","sub":"Tetracyclines"},"l74":{"x0":1326,"x1":1650,"sy":851.0,"ty":954.0,"rows":[28],"col":"#0B9B6B","name":"Multiple → N. sp.","sub":"Aminoglycosides"},"l77":{"x0":1326,"x1":1650,"sy":785.0,"ty":934.0,"rows":[31],"col":"#0B9B6B","name":"Transposase → N. sp.","sub":"Aminoglycosides"},"l75":{"x0":1326,"x1":1650,"sy":509.0,"ty":914.0,"rows":[29,30],"col":"#D98200","name":"Recombinase → N. sp.","sub":"Macrolides"},"l70":{"x0":1326,"x1":1650,"sy":291.0,"ty":904.0,"rows":[27],"col":"#8E44AD","name":"Conjugal Transfer Protein → N. sp.","sub":"Tetracyclines"},"l79":{"x0":1326,"x1":1650,"sy":795.0,"ty":944.0,"rows":[32],"col":"#8E44AD","name":"Transposase → N. sp.","sub":"Tetracyclines"},"l81":{"x0":1326,"x1":1650,"sy":967.0,"ty":964.0,"rows":[33],"col":"#8E44AD","name":"Unknown → N. sp.","sub":"Tetracyclines"},"l24":{"x0":336,"x1":700,"sy":392.0,"ty":937.0,"rows":[9,25,57,58,59,60],"col":"#8E44AD","name":"Neisseria subflava → tetM","sub":"Tetracyclines"},"l30":{"x0":336,"x1":700,"sy":972.0,"ty":1007.0,"rows":[13,27,61],"col":"#8E44AD","name":"Streptococcus pneumoniae → tetM","sub":"Tetracyclines"},"l32":{"x0":336,"x1":700,"sy":266.0,"ty":927.0,"rows":[14],"col":"#8E44AD","name":"Neisseria sicca → tetM","sub":"Tetracyclines"},"l80":{"x0":336,"x1":700,"sy":230.0,"ty":907.0,"rows":[33,69],"col":"#8E44AD","name":"Neisseria perflava → tetM","sub":"Tetracyclines"},"l118":{"x0":336,"x1":700,"sy":646.0,"ty":997.0,"rows":[68],"col":"#8E44AD","name":"Fusobacterium polymorphum → tetM","sub":"Tetracyclines"}},"nodes":{"n0_0":{"rows":[2,38],"name":"Neisseria gonorrhoeae","sub":"Pathogenic Neisseria"},"n0_1":{"rows":[1,16],"name":"Neisseria macacae","sub":"Commensal Neisseria"},"n0_2":{"rows":[33,69],"name":"Neisseria perflava","sub":"Commensal Neisseria"},"n0_3":{"rows":[8,14],"name":"Neisseria sicca","sub":"Commensal Neisseria"},"n0_4":{"rows":[7,9,10,11,12,25,29,30,43,44,47,48,49,57,58,59,60],"name":"Neisseria subflava","sub":"Commensal Neisseria"},"n0_5":{"rows":[0,23,56],"name":"Neisseria sp.","sub":"Commensal Neisseria"},"n0_6":{"rows":[50,53],"name":"Acinetobacter baumannii","sub":"Gram Negative"},"n0_7":{"rows":[18],"name":"Brucella anthropi","sub":"Gram Negative"},"n0_8":{"rows":[39],"name":"Citrobacter freundii","sub":"Gram Negative"},"n0_9":{"rows":[15,32,37,51,54,55,62],"name":"Escherichia coli","sub":"Gram Negative"},"n0_10":{"rows":[68],"name":"Fusobacterium polymorphum","sub":"Gram Negative"},"n0_11":{"rows":[64],"name":"Gardnerella sp.","sub":"Gram Negative"},"n0_12":{"rows":[19,34],"name":"Haemophilus influenzae","sub":"Gram Negative"},"n0_13":{"rows":[41,42,45,46,65],"name":"Haemophilus sp.","sub":"Gram Negative"},"n0_14":{"rows":[28,31],"name":"Kingella kingae","sub":"Gram Negative"},"n0_15":{"rows":[17],"name":"Klebsiella pneumoniae","sub":"Gram Negative"},"n0_16":{"rows":[20],"name":"Klebsiella quasipneumoniae","sub":"Gram Negative"},"n0_17":{"rows":[35],"name":"Methylorubrum extorquens","sub":"Gram Negative"},"n0_18":{"rows":[22,24],"name":"Paracoccus dentrificans","sub":"Gram Negative"},"n0_19":{"rows":[52],"name":"Phaeobacter inhibens","sub":"Gram Negative"},"n0_20":{"rows":[21,40],"name":"Salmonella enterica","sub":"Gram Negative"},"n0_21":{"rows":[36],"name":"Enterococcus hirae","sub":"Gram Positive"},"n0_22":{"rows":[5,6],"name":"Streptococcus oralis","sub":"Gram Positive"},"n0_23":{"rows":[13,27,61,66],"name":"Streptococcus pneumoniae","sub":"Gram Positive"},"n0_24":{"rows":[3,4,26,63,67],"name":"Streptococcus sanguinis","sub":"Gram Positive"},"n1_0":{"rows":[7,12,49],"name":"AAC(3)","sub":"Aminoglycosides"},"n1_1":{"rows":[19,20,31,36,50,62],"name":"APH3","sub":"Aminoglycosides"},"n1_2":{"rows":[28,37],"name":"APH6id","sub":"Aminoglycosides"},"n1_3":{"rows":[18],"name":"blaOCH8","sub":"Beta-lactams"},"n1_4":{"rows":[38],"name":"BlaTEM143","sub":"Beta-lactams"},"n1_5":{"rows":[15,39],"name":"blaTEM1a","sub":"Beta-lactams"},"n1_6":{"rows":[2,34,40],"name":"blaTEM1b","sub":"Beta-lactams"},"n1_7":{"rows":[0,1,16],"name":"isaC","sub":"Macrolides"},"n1_8":{"rows":[3,4,10,29,41,42,43,44,63],"name":"mefA","sub":"Macrolides"},"n1_9":{"rows":[21],"name":"mphE","sub":"Macrolides"},"n1_10":{"rows":[5,6,11,26,30,45,46,47,48,64,65,66,67],"name":"msrD","sub":"Macrolides"},"n1_11":{"rows":[17,22,51,52],"name":"Sul2","sub":"Sulfonamides"},"n1_12":{"rows":[8,23,32,53,54,55,56],"name":"TetB","sub":"Tetracyclines"},"n1_13":{"rows":[24,35],"name":"tetG","sub":"Tetracyclines"},"n1_14":{"rows":[9,13,14,25,27,33,57,58,59,60,61,68,69],"name":"tetM","sub":"Tetracyclines"},"n2_0":{"rows":[2,7,12,17,20,31,36,37,38,39,40,49,50,51,52,62],"name":"Plasmid","sub":"Type"},"n2_1":{"rows":[0,1,3,4,5,6,8,9,10,11,13,14,15,16,18,19,21,22,23,24,25,26,27,28,29,30,32,33,34,35,41,42,43,44,45,46,47,48,53,54,55,56,57,58,59,60,61,63,64,65,66,67,68,69],"name":"Chromosomal","sub":"Type"},"n3_0":{"rows":[0,1,16,27,34,35],"name":"Conjugal Transfer Protein","sub":"Flanking Mobile Genetic Elements"},"n3_1":{"rows":[17],"name":"Mobile Element Protein","sub":"Flanking Mobile Genetic Elements"},"n3_2":{"rows":[18],"name":"Phage portal protein","sub":"Flanking Mobile Genetic Elements"},"n3_3":{"rows":[3,4,5,6,10,11,15,29,30,39,40,41,42,43,44,45,46,47,48],"name":"Recombinase","sub":"Flanking Mobile Genetic Elements"},"n3_4":{"rows":[7,8,9,12,13,19,20,21,22,23,24,25,31,32,49,50,51,52,53,54,55,56,57,58,59,60,61],"name":"Transposase","sub":"Flanking Mobile Genetic Elements"},"n3_5":{"rows":[2,28,36,37,38],"name":"Multiple","sub":"Flanking Mobile Genetic Elements"},"n3_6":{"rows":[14,26,33,62,63,64,65,66,67,68,69],"name":"Unknown","sub":"Flanking Mobile Genetic Elements"},"n4_0":{"rows":[0],"name":"N. macacae","sub":"Isolated Commensal Neisseria"},"n4_1":{"rows":[1,2,3,4,5,6,7,8,9],"name":"N. mucosa","sub":"Isolated Commensal Neisseria"},"n4_2":{"rows":[10,11,12,13,14],"name":"N. perflava","sub":"Isolated Commensal Neisseria"},"n4_3":{"rows":[15,16,17,18,19,20,21,22,23,24,25,26],"name":"N. sicca","sub":"Isolated Commensal Neisseria"},"n4_4":{"rows":[34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69],"name":"N. subflava","sub":"Isolated Commensal Neisseria"},"n4_5":{"rows":[27,28,29,30,31,32,33],"name":"N. sp.","sub":"Isolated Commensal Neisseria"}}};
+const svg = document.querySelector('svg'), hl = document.getElementById('highlight'), tip = document.getElementById('tip');
+const ribbons = [...svg.querySelectorAll('#ribbons path')], nodeEls = [...svg.querySelectorAll('[data-node]')];
+const NS = 'http://www.w3.org/2000/svg';
+const rib = (x0,x1,sy,ty,w) => { const m=(x0+x1)/2; return `M${x0},${sy}C${m},${sy} ${m},${ty} ${x1},${ty}L${x1},${ty+w}C${m},${ty+w} ${m},${sy+w} ${x0},${sy+w}Z`; };
+function show(rows) {
+  const rs = new Set(rows); hl.replaceChildren();
+  for (const el of ribbons) {
+    const L = D.links[el.id]; el.style.opacity = L.rows.some(r => rs.has(r)) ? 0.3 : 0.08;
+    let a = -1;
+    for (let k = 0; k <= L.rows.length; k++) {
+      const on = k < L.rows.length && rs.has(L.rows[k]);
+      if (on && a < 0) a = k;
+      if (!on && a >= 0) {
+        const p = document.createElementNS(NS, 'path');
+        p.setAttribute('d', rib(L.x0, L.x1, L.sy + a*D.u, L.ty + a*D.u, (k-a)*D.u));
+        p.setAttribute('fill', L.col); p.setAttribute('fill-opacity', '0.92'); hl.appendChild(p); a = -1;
+      }
+    }
+  }
+  for (const e of nodeEls) e.style.opacity = D.nodes[e.dataset.node].rows.some(r => rs.has(r)) ? 1 : 0.18;
+}
+function reset() { hl.replaceChildren(); ribbons.forEach(e => e.style.opacity = ''); nodeEls.forEach(e => e.style.opacity = ''); tip.style.opacity = 0; }
+function tipAt(ev, a, b, n) { tip.innerHTML = `<b>${a}</b><br>${b}<br>${n} ${n===1?'entry':'entries'}`; tip.style.opacity = 1; tip.style.left = (ev.clientX+14)+'px'; tip.style.top = (ev.clientY+12)+'px'; }
+for (const e of nodeEls) {
+  const N = D.nodes[e.dataset.node];
+  e.addEventListener('mouseenter', () => show(N.rows));
+  e.addEventListener('mousemove', ev => tipAt(ev, N.name, N.sub, N.rows.length));
+  e.addEventListener('mouseleave', reset);
+}
+for (const e of ribbons) {
+  const L = D.links[e.id];
+  e.addEventListener('mouseenter', () => show(L.rows));
+  e.addEventListener('mousemove', ev => tipAt(ev, L.name, L.sub, L.rows.length));
+  e.addEventListener('mouseleave', reset);
+}
+</script>
+</body>
+</html>
